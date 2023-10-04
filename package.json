@@ -1,0 +1,15 @@
+{
+  "name": "projeto-exemplo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client/index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

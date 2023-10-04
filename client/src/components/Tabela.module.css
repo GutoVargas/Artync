@@ -1,0 +1,94 @@
+.window {
+    background-image: url(/public/images/Background5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding: 60px;
+}
+
+.dashboard {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    border-radius: 12px;
+}
+
+.menu  {
+    background: radial-gradient(81.14% 92.42% at 50.00% 50.00%, #00BBA8 0%, #00796D 100%);
+
+    /* padding-left: 30px; */
+    width: 25%;
+    height: 680px;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: center;
+
+}
+
+.MenuImg {
+    height: 10%;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.MenuImg img {
+    width: 60%;
+
+}
+
+.menu h1 {
+    color: #00BBA8;
+    font-size: 18px;
+    font-family: KulimPark;
+    background-color: #fff;
+    width: 70%;
+    margin: 30%;
+    border-radius: 20px 0px 0px 20px;
+    text-align: left;
+    padding-inline-start: 34px;
+    height: 30px;
+    padding-top: 12px;
+
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+.dados div {
+    width: 90%;
+    height: 6%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.dados div input {
+    background-color: aqua;
+    width: auto;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 32px;
+    min-width: 124px;
+}
+
+
+.dados table {
+    width: 100%;
+}
+
+.dados table tbody {
+    background-color: #cac4c4;
+    border-collapse: collapse;
+    font-weight: normal;
+    
+}
+

@@ -1,0 +1,1100 @@
+@media only screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  @font-face {
+    font-family: 'Lalezar';
+    src: local('Lalezar'), url(../public/fonts/Lalezar-Regular.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'KulimPark';
+    src: local('KulimPark'), url(../public/fonts/KulimPark-Regular.ttf) format('truetype');
+  }
+  
+  body {
+    margin: 0;
+    font-family: Lalezar;
+    background-size: 100vw;
+    overflow: overlay;
+  }
+
+  [data-anime] {
+    opacity: 0;
+    transition: 1s ease-out;
+  }
+  
+  [data-anime="top"] {
+    transform: translate3d(0, -10px, 0);
+  }
+  
+  [data-anime="bottom"] {
+    transform: translate3d(0, 10px, 0);
+  }
+  
+  [data-anime="left"] {
+    transform: translate3d(-25px, 0, 0);
+  }
+  
+  [data-anime="right"] {
+    transform: translate3d(25px, 0, 0);
+  }
+  
+  [data-anime].animate {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  
+  
+  
+  
+  [data-animefirst] {
+    opacity: 0;
+    transition: 1s ease-out;
+  }
+  
+  [data-animefirst="top"] {
+    transform: translate3d(0, -50px, 0);
+  }
+  
+  [data-animefirst="bottom"] {
+    transform: translate3d(0, 50px, 0);
+  }
+  
+  [data-animefirst="left"] {
+    transform: translate3d(-50px, 0, 0);
+  }
+  
+  [data-animefirst="right"] {
+    transform: translate3d(50px, 0, 0);
+  }
+  
+  [data-animefirst].animate {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  
+  
+  
+  [data-animebefore] {
+    opacity: 0;
+    transition: 1s ease-out;
+  }
+  
+  [data-animebefore="top"] {
+    transform: translate3d(0, -50px, 0);
+  }
+  
+  [data-animebefore="bottom"] {
+    transform: translate3d(0, 50px, 0);
+  }
+  
+  [data-animebefore="left"] {
+    transform: translate3d(-50px, 0, 0);
+  }
+  
+  [data-animebefore="right"] {
+    transform: translate3d(50px, 0, 0);
+  }
+  
+  [data-animebefore].AnimateBefore {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  
+
+
+  .Header {
+    height: auto;
+    background-repeat: no-repeat;
+    background-image: url(../public/images/HeaderBackground.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+
+  .HeaderLogo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .HeaderLogo img {
+    width: 60%;
+  }
+
+  .Button {
+    margin: 0 auto;
+    width: 290.25px;
+    background-color: #00BBA8;
+    display: flex;
+    justify-content: center;
+    gap: 14.7px;
+    font-family: KulimPark;
+    border-radius: 3.67px;
+    color: #ffff;
+    margin-top: 16px;
+    font-size: 20px;
+    margin-bottom: 70.54px;
+    height: 49.46px;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  header h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Lalezar;
+    font-size: 29.086px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33.43px;
+  }
+
+  header > p {
+    width: 60%;
+    color: #FFF;
+    text-align: center;
+    font-family: KulimPark;
+    font-size: 12.465px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .MainAbout {
+    background-image: url(../public/images/Background1.png);
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
+  }
+
+  .MainAboutImg {
+    width: 100%;
+  }
+
+  .MainAboutImg img {
+    width: 100%;
+  }
+
+  .MainAboutInfo {
+    padding: 0 50px;
+  }
+
+  .MainAboutInfo h2 {
+    font-family: KulimPark;
+    color: #ffff;
+    font-size: 18px;
+  }
+
+  .MainAboutInfo h1 {
+    font-size: 32px;
+    line-height: 27px;
+    margin: 10px 0px;
+    background-image: linear-gradient(to bottom, #6EF1E4, #069384 );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: normal;
+  }
+
+  .MainAboutInfo p {
+    width: 95%;
+    color:  #fff;
+    font-family: KulimPark;
+    font-weight: normal;
+    border-left: 4px #00BBA8 solid ;
+    padding: 20px 30px;
+  }
+
+  .MainWorks {
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    background-image: url(../public/images/Background2.png);
+    font-family: KulimPark;
+    padding: 0 30px;
+  }
+
+  .MainWorks > h1 {
+    font-size: 20px;
+    margin: 20px 0;
+    font-family: Lalezar;
+    font-weight: normal;
+  }
+
+
+  .MainWorks > p {
+    padding: 0 10px;
+    margin-bottom: 31px;
+  }
+
+  .MainWorksCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .MainWorksCard article {
+    background-image: linear-gradient(to bottom,#136472, #00BBA8);
+    height: 139px;
+    border-radius: 19.27px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .MainWorksCard h1 {
+    height: 100%;
+    width: 30%;
+    font-family: Lalezar;
+    color: white;
+    font-size: 68.83px;
+    text-align: center;
+    
+  }
+
+  .MainWorksCard article>h2 {
+    color: white;
+    font-family: KulimPark;
+    font-weight: normal;
+    margin-top: 24.78px;
+    margin-bottom: 6.88px;
+    text-align: left;
+  }
+  
+  
+  .MainWorksCard article>p {
+    color: white;
+    font-family: KulimPark;
+    width: 60%;
+    text-align: left;
+  }
+
+  .MainButton {
+    margin: 45px 0;
+    width: 86%;
+  }
+
+  .MainServices {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+    background-image: url(../public/images/Background1.png);
+    padding: 0 30px;
+  }
+
+ .MainServices > h1 {
+   font-family: Lalezar;
+   font-size: 18px;
+   font-weight: normal;
+   margin-top: 23px;
+ }
+
+ .MainServices > p {
+    font-family: KulimPark;
+    font-size:  15px;
+    margin: 15px 0;
+ }
+
+  .MainServicesArticles {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 52px;
+  }
+
+  .MainServicesArticles article {
+    background-color: rgba(0, 0, 0, .41);
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px 42px;
+  }
+
+.MainServicesArticles article>img {
+width: 132px;
+}
+
+.MainServicesArticles article>h1 {
+  font-family: KulimPark;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: left;
+  margin-top: 29px;
+}
+
+.MainServicesArticles article>p {
+  font-family: KulimPark;
+  font-size: 12px;
+  text-align: left;
+  margin: 12px 0; 
+
+}
+
+.MainSite {
+  height: auto;
+  min-height: 100vh;
+  background-image: url(../public/images/Background3.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding: 0 36px;
+  padding-bottom: 67px;
+}
+
+.MainSite > h1 {
+  width: 100%;
+  color: white;
+  margin: 0 auto;
+  font-family: Lalezar;
+  font-weight: normal;
+  margin: 31px;
+  font-size: 18px;
+}
+
+.MainSite > h1 > p {
+  background-image: linear-gradient(to bottom, #6EF1E4, #069384);
+  display: inline;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.MainSiteTittleWord {
+  background-image: linear-gradient(to bottom, #6EF1E4, #069384);
+  display: inline;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.MainSiteArticles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+}
+
+.MainSiteArticles article {
+  color: #ffff;
+  height: auto;
+  min-height: 132px;
+  background-color: rgba(0, 0, 0, .41);
+  border-radius: 5px;
+  padding: 16px 27px;
+  margin: 10px;
+  font-size: 16px;
+  line-height: 18.16px;
+  font-family: KulimPark;
+}
+
+.MainSite article div {
+  display: none;
+}
+
+.MainSite article h1 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  font-weight: normal;
+}
+
+.MainSite article p {
+  font-size: 16px;
+  color: #D9D9D9;
+}
+
+
+.Footer {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background-image: url(../public/images/Background1.png);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover;
+}
+
+.Footer h1 {
+  color: #ffff;
+  font-size: 20px;
+  font-family: Lalezar;
+  font-weight: normal;
+  margin-top: 22px;
+}
+
+.Footer p {
+  color: #ffff;
+  font-size: 16px;
+  font-family: KulimPark;
+  padding: 0 32px;
+  margin-bottom: 30px;
+}
+
+
+.FooterInputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.FooterInputs input, .FooterInputs textarea {
+    width: 65%;
+    height: 34px;
+    border-radius: 7.56px;
+    background-color: #D9D9D9;
+    color: #786868;
+    font-family: KulimPark;
+    padding: 13px 20px;
+    border: none;
+    font-size: 16px;
+  }
+
+  .FooterInputs textarea {
+    height: 213px;
+  }
+
+ 
+
+
+
+  .FooterButton {
+    margin: 0 auto;
+    width: 290.25px;
+    background-color: #00BBA8;
+    display: flex;
+    justify-content: center;
+    gap: 14.7px;
+    border-radius: 3.67px;
+    margin-top: 50px;
+    margin-bottom: 70.54px;
+    height: 49.46px;
+    align-items: center;
+    text-decoration: none;
+    border: none;
+  }
+
+  .FooterButton p {
+    font-family: KulimPark;
+    color: #ffff;
+    font-size: 20px;
+    margin: auto 0;
+  }
+
+    
+  .FooterAside {
+    background-color: #071825;
+    height: auto;
+    color: #ffff;
+    font-family: KulimPark;
+    font-weight: normal;
+    font-size: 16px;
+    display: flex;
+    text-align: center;
+    gap: 18px;
+    padding: 24px 0;
+    flex-direction: column;
+  }
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  @font-face {
+    font-family: 'Lalezar';
+    src: local('Lalezar'), url(../public/fonts/Lalezar-Regular.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'KulimPark';
+    src: local('KulimPark'), url(../public/fonts/KulimPark-Regular.ttf) format('truetype');
+  }
+  
+  body {
+    margin: 0;
+    font-family: Lalezar;
+    background-size: 100vw;
+    overflow: overlay;
+  }
+  
+  
+  [data-anime] {
+    opacity: 0;
+    transition: 1s ease-out;
+  }
+  
+  [data-anime="top"] {
+    transform: translate3d(0, -10px, 0);
+  }
+  
+  [data-anime="bottom"] {
+    transform: translate3d(0, 10px, 0);
+  }
+  
+  [data-anime="left"] {
+    transform: translate3d(-25px, 0, 0);
+  }
+  
+  [data-anime="right"] {
+    transform: translate3d(25px, 0, 0);
+  }
+  
+  [data-anime].animate {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  
+  
+  
+  
+  [data-animefirst] {
+    opacity: 0;
+    transition: 1s ease-out;
+  }
+  
+  [data-animefirst="top"] {
+    transform: translate3d(0, -50px, 0);
+  }
+  
+  [data-animefirst="bottom"] {
+    transform: translate3d(0, 50px, 0);
+  }
+  
+  [data-animefirst="left"] {
+    transform: translate3d(-50px, 0, 0);
+  }
+  
+  [data-animefirst="right"] {
+    transform: translate3d(50px, 0, 0);
+  }
+  
+  [data-animefirst].animate {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  
+  
+  
+  [data-animebefore] {
+    opacity: 0;
+    transition: 1s ease-out;
+  }
+  
+  [data-animebefore="top"] {
+    transform: translate3d(0, -50px, 0);
+  }
+  
+  [data-animebefore="bottom"] {
+    transform: translate3d(0, 50px, 0);
+  }
+  
+  [data-animebefore="left"] {
+    transform: translate3d(-50px, 0, 0);
+  }
+  
+  [data-animebefore="right"] {
+    transform: translate3d(50px, 0, 0);
+  }
+  
+  [data-animebefore].AnimateBefore {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  
+  
+  
+  
+  
+  
+  .Header {
+    height: auto;
+    background-repeat: no-repeat;
+    background-image: url(../public/images/HeaderBackground.png);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 60px;
+    min-height: 100vh;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Button:hover, .MainButton:hover {
+    animation: buttonanime 0.4s linear;
+    animation-fill-mode: both;
+  }
+  
+  
+  .HeaderLogo {
+    width: 17%;
+  }
+  
+  .HeaderLogo img {
+    width: 100%;
+    min-width: 160px;
+    margin-left: 70px;
+  }
+  
+  
+  @keyframes buttonanime {
+    from {
+    }
+    to {
+      width: 264px;
+      background-color: #069384;
+    }
+  }
+  
+
+  
+  header h1 {
+    font-size: 64px;
+    color: white;
+    width: 60%;
+    font-weight: normal;
+    line-height: 81px;
+    margin: 59px 0 0 71px;
+
+  }
+  
+  header > p {
+    margin-top: 23px;
+    width: 50%;
+    margin: 0 0 47px 71px;
+    font-size: 20px;
+    color: white;
+    font-family: KulimPark;
+  }
+
+    .Button {
+    width: 256px;
+    background-color: #00BBA8;
+    display: flex;
+    height: 49.46px;
+    justify-content: space-between;
+    padding-left: 17.64;
+    font-family: KulimPark;
+    border-radius: 3.67px;
+    color: #ffff;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 71.75px;
+    padding: 0 17.64px;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .MainAbout {
+    height: auto;
+    min-height: 617px;
+    display: flex;
+    background-image: url(../public/images/Background1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: left;
+  }
+  
+  .MainAboutImg {
+    width: 42%;
+    min-width: 480px;
+  }
+  
+  .MainAboutImg img {
+    width: 100%;
+  }
+  
+  .MainAboutInfo {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 45%;
+  }
+  
+  .MainAboutInfo h2 { 
+    font-size: 25px;
+    margin-top: 112px;
+    font-weight: normal;
+    font-family: KulimPark;
+    margin-bottom: 10px;
+  }
+  
+  .MainAboutInfo h1 { 
+    font-size: 63px;
+    line-height: 56px;
+    background-image: linear-gradient(to bottom, #6EF1E4, #069384 );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .MainAboutInfo p { 
+    font-size: 18px;
+    line-height: 20.46px;
+    border-left: #00BBA8 4px solid;
+    margin-left: 20%;
+    height: 100%;
+    margin-top: 30px;
+    padding: 16px 23px;
+    width: 62%;
+    font-weight: normal;
+    font-family: KulimPark;
+  }
+  
+  .MainWorks {
+    height: 478px;
+    background-image: url(../public/images/Background2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .MainWorks > h1 {
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    font-weight: normal;
+    line-height: 35px;
+    margin-top: 35px;
+  }
+  
+  .MainWorks > p {
+    color: white;
+    text-align: center; 
+    font-size: 20px;
+    font-family: KulimPark;
+  }
+  
+  .MainWorksCard {
+    display: flex;
+    justify-content: center;
+    gap: 31px;
+    height: auto;
+    margin-top: 55px;
+    margin-bottom: 32.18px;
+    padding: 0 20px;;
+  }
+  
+  .MainWorksCard article {
+    width: 413px;
+    height: 139px;
+    border-radius: 19.27px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to bottom,#136472, #00BBA8);
+  }
+  
+  .MainWorksCard article>h2 {
+    color: white;
+    font-family: KulimPark;
+    font-weight: normal;
+    margin-top: 24.78px;
+    margin-bottom: 6.88px;
+  }
+  
+  
+  .MainWorksCard article>p {
+    color: white;
+    font-family: KulimPark;
+    width: 60%;
+  }
+  
+  .MainWorksCard h1 {
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-size: 68.83px;
+  }
+  
+  .MainButton {
+    margin: 0 auto;
+  }
+  
+  .MainServices {
+    height: 748px;
+    background-image: url(../public/images/Background1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding-top: 71px;
+  }
+  
+  .MainServices h1 {
+    font-size: 35px;
+    font-weight: normal;
+    font-family: Lalezar;
+  }
+  
+  .MainServices p {
+    font-family: KulimPark;
+    font-size: 20px;
+    margin-bottom: 37px;
+  }
+  
+  .MainServicesArticles {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  
+  .MainServicesArticles article {
+    background-color: rgba(0, 0, 0, .41);
+    width: 22.76%;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .MainServicesArticles article>img {
+  width: 132px;
+  margin-top: 55px;
+  }
+  
+  .MainServicesArticles article>h1 {
+    font-family: KulimPark;
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 12px;
+  }
+  
+  .MainServicesArticles article>p {
+    font-family: KulimPark;
+    font-size: 20px;
+    text-align: left;
+    width: auto;
+    margin: 36px;
+  }
+  
+  
+  .MainSite {
+    height: auto;
+    min-height: 622px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../public/images/Background3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  
+  .MainSite > h1 {
+    color: white;
+    margin: 0 auto;
+    font-family: Lalezar;
+    font-weight: normal;
+    margin: 31px;
+    font-size: 35px;
+  }
+
+  .MainSite > h1 > p {
+    background-image: linear-gradient(to bottom, #6EF1E4, #069384);
+    display: inline;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .MainSiteArticles {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: KulimPark;
+    text-align: left;
+  }
+
+  .MainSiteArticles article {
+    width: 16%;
+    min-height: 320px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.41);
+    height: auto;
+    padding: 25px 48px;
+    color: #fff;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 50% 100%, 0% 90%);
+  }
+
+  .MainSiteArticles article div {
+    width: 100%;
+    font-size: 30px;
+    border-bottom: 3px #fff solid;
+    font-weight: normal;
+    padding-bottom: 12px;
+  }
+
+  .MainSiteArticles article h1 {
+    font-size: 26px;
+    margin: 10px 0;
+  }
+
+  .Footer {
+    width: 100%;
+    min-height: 597px;
+    height: auto;
+    background-image: url(../public/images/Background1.png);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+  }
+
+  .FooterButton {
+    border: none;
+  }
+  
+  .Footer h1 {
+    color: #ffff;
+    font-size: 35px;
+    font-family: Lalezar;
+    font-weight: normal;
+    margin-top: 50px;
+  }
+  
+  .Footer p {
+    color: #ffff;
+    font-size: 20px;
+    font-family: KulimPark;
+    max-width: 567.12px;
+    width: auto;
+    margin: 0 auto;
+  }
+  
+  .FooterInputs {
+    width: 42%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  
+  .FooterInputs input, .FooterInputs textarea {
+    box-sizing: border-box; 
+    width: 46%;
+    height: 45.37px;
+    border-radius: 7.56px;
+    background-color: #D9D9D9;
+    font-family: KulimPark;
+    padding: 13px 20px;
+    margin-top: 20px;
+    border: none;
+  }
+  
+  .FooterInputs textarea {
+    width: 100%;
+    height: 96px;
+    text-size-adjust: wrap;
+  }
+
+  
+  .FooterButton {
+    margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 48px;
+  }
+
+  
+  .FooterAside {
+    background-color: #071825;
+    height: auto;
+    min-height: 164px;
+    color: #ffff;
+    font-family: KulimPark;
+    font-weight: normal;
+    font-size: 30px;
+    display: flex;
+    text-align: center;
+    gap: 36px;
+    padding: 24px 0;
+    flex-direction: column;
+  }
+  
+
+}
+
+
+
+
+
+
+
+
+
+

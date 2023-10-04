@@ -1,0 +1,259 @@
+
+@media only screen and (min-width: 768px) {
+
+
+    .Main {
+        display: flex;
+        flex-direction: column;
+        background-image: url('/public/images/Background1.png');
+        min-height: 1111px;
+        height: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+    }
+
+    .Main form {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .MainInputs {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .MainInputs p {
+        
+        width: 100%;
+        color: #FFF;
+        font-family: KulimPark;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 58px 0px 30px 0px;
+    }
+
+    .MainInputs input {
+        width: 28%;
+        min-height: 45px;
+        border-radius: 7px;
+        background-color: #d9d9d9;
+        color: #786868;
+        padding-left: 20px;
+        margin-bottom: 26px;
+        border: none;
+    }
+
+    .Main form .WholeInput {
+        width: 100%;
+    }
+
+    .Main section > h1 {
+        width: 60%;
+        color: #FFF;
+        text-align: center;
+        font-family: Lalezar;
+        font-size: 35px;
+        font-weight: normal;
+        line-height: 34px;
+        margin: 40px auto;
+    }
+
+    .MainCheckbox {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .MainCheckboxItem{
+        display: flex;
+        color: #FFF;
+        width: 18%;
+        font-family: KulimPark; 
+        font-size: 12px;
+    }
+
+    .MainCheckboxItem input {
+        appearance: none;
+        background-color: #FFF;
+        width: 27px;
+        height: 27px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        position: relative;
+    }
+
+    .MainCheckboxItem input:checked::before {
+        content: '✔';
+        position: absolute;
+        font-size: 22px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .MainCheckboxItem h1 {
+        margin-left: 10px;
+        font-family: KulimPark;
+        font-weight: normal;
+    }
+
+    .MainButton {
+        width: 22%;
+        background-color: #00BBA8;
+        display: flex;
+        height: 49.46px;
+        justify-content: space-between;
+        padding-left: 17.64;
+        font-family: KulimPark;
+        border-radius: 3.67px;
+        color: #ffff;
+        font-size: 20px;
+        cursor: pointer;
+        margin: 90px auto;
+        padding: 0 17.64px;
+        align-items: center;
+        text-decoration: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .Main {
+        display: flex;
+        flex-direction: column;
+        background-image: url('/public/images/Background1.png');
+        min-height: 1111px;
+        height: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+    }
+
+    .Main form {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .MainInputs {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .MainInputs p {
+        width: 100%;
+        color: #FFF;
+        font-family: KulimPark;
+        font-size: 15px;
+        font-style: normal;
+        text-align: center;
+        margin: 30px 0px;
+    }
+
+    .MainInputs input, .MainInputs textarea {
+        width: 100%;
+        min-height: 45px;
+        border-radius: 7px;
+        background-color: #d9d9d9;
+        color: #786868;
+        padding-left: 20px;
+        margin-bottom: 26px;
+        border: none;
+    }
+
+
+    .Main section > h1 {
+        width: 80%;
+        color: #FFF;
+        text-align: center;
+        font-family: Lalezar;
+        font-size: 22px;
+        font-weight: normal;
+        margin: 40px auto;
+    }
+
+    .MainCheckbox {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .MainCheckboxItem{
+        display: flex;
+        color: #FFF;
+        width: 18%;
+        font-family: KulimPark; 
+        font-size: 12px;
+    }
+
+    .MainCheckboxItem input {
+        appearance: none;
+        background-color: #FFF;
+        width: 27px;
+        height: 27px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        position: relative;
+    }
+
+    .MainCheckboxItem input:checked::before {
+        content: '✔';
+        position: absolute;
+        font-size: 22px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .MainCheckboxItem h1 {
+        margin-left: 10px;
+        font-family: KulimPark;
+        font-weight: normal;
+    }
+
+    .MainButton {
+        width: 75%;
+        background-color: #00BBA8;
+        display: flex;
+        height: 49.46px;
+        justify-content: space-between;
+        padding-left: 17.64;
+        font-family: KulimPark;
+        border-radius: 3.67px;
+        color: #ffff;
+        font-size: 20px;
+        cursor: pointer;
+        margin: 90px auto;
+        padding: 0 17.64px;
+        align-items: center;
+        text-decoration: none;
+    }
+    
+}

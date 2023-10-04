@@ -1,0 +1,60 @@
+
+@media only screen and (min-width: 768px) {
+    .HeaderBackground {
+        width: 100%;
+        min-height: 599px;
+        background-image: url(/public/images/OrçamentoHeaderBackground.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .HeaderLogo {
+        width: 17%;
+        min-width: 160px;
+        margin-left: 70px;
+    }
+
+
+    .HeaderTittle {
+        margin: 0 auto;
+        color: #FFF;
+        text-align: center;
+        font-family: Lalezar;
+        font-size: 107px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 96px;
+        text-shadow: black 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .HeaderBackground{
+        min-height: 202px;
+        background-image: url(/public/images/OrçamentoHeaderBackground.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .HeaderLogo {
+        display: none;
+    }
+
+    .HeaderTittle {
+        width: 80%;
+        margin: 0 auto;
+        color: #FFF;
+        text-align: center;
+        font-family: Lalezar;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        text-shadow: black 10px;
+    }
+}

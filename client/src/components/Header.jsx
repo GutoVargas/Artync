@@ -68,15 +68,12 @@ function Header() {
             <header data-animebefore='top'>
                 <h1>Do conceito ao design, fazemos seu site ganhar vida, elevando sua presença digital a um novo patamar </h1>
                 <p>Nosso foco é criar soluções digitais personalizadas que têm o poder de impulsionar o crescimento exponencial da sua empresa</p>
-                {/*<Link to='/orçamento' className="Button HeaderButton" onClick={scrollTop}>
+                <Link to='/orçamento' className="Button HeaderButton" onClick={scrollTop}>
                     <p>Solicitar um orçamento</p>
                     <img src="./images/flecha.png" alt="" />
-    </Link> */}
-
-    
+                </Link>
             </header>
         </div>
-
     )
 }
 

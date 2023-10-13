@@ -43,29 +43,27 @@ function Main() {
             </section>
             <section className='MainWorks'>
                 <h1>Por que nos escolher?</h1>
-                <div className='MainWorksCard' data-anime='top'>
-                    <article>
+                <div className='MainWorksCard' >
+                    <article data-anime='top'>
                         <h1>01</h1>
                         <h2>Preço justo</h2>
                         <p>Obtenha uma presença online profissional sem comprometer seu orçamento.</p>
                     </article>
-                    <article>
+                    <article data-anime='top'>
                         <h1>02</h1>
                         <h2>Design Intuitivo</h2>
                         <p>Proporcionamos uma experiência agradável e diferenciada para os usuários do seu site.</p>
                     </article>
-                    <article>
+                    <article data-anime='top'>
                         <h1>03</h1>
                         <h2>Otimização</h2>
                         <p>Websites otimizados com velocidade de carregamento rápida e funcionalidades fluidas.</p>
                     </article>
                 </div>
-                {/*}
                     <Link to='/orçamento' className="Button MainButton" data-anime='bottom' onClick={scrollTop}>
                         <p>Solicitar orçamento</p>
                         <img src="./images/flecha.png" alt="" />
                     </Link>
-    */}
             </section>
             <section className='MainServices'>
                 <h1>Nossos serviços</h1>

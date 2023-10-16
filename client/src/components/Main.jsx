@@ -60,10 +60,10 @@ function Main() {
                         <p>Websites otimizados com velocidade de carregamento rápida e funcionalidades fluidas.</p>
                     </article>
                 </div>
-                    <Link to='/orçamento' className="Button MainButton" data-anime='bottom' onClick={scrollTop}>
+                    <a href='#form' className="Button MainButton" data-anime='bottom' onClick={scrollTop}>
                         <p>Solicitar orçamento</p>
                         <img src="./images/flecha.png" alt="" />
-                    </Link>
+                    </a>
             </section>
             <section className='MainServices'>
                 <h1>Nossos serviços</h1>
@@ -124,10 +124,10 @@ function Main() {
                 </div>
             </section>
             <footer>
-                <form action="/api/send-message" method="post" className='Footer'>
+                <form action="/api/send-message" method="post" className='Footer' >
                     <h1 >Fale com a Artync</h1>
-                    <p >Muito obrigado pela leitura do site. Caso tenha se interessado pelos nossos serviços, entre em contato conosco através do formulário abaixo. Iremos esclarecer quaisquer dúvidas sobre o nosso trabalho.</p>
-                    <div className="FooterInputs">
+                    <p>Muito obrigado pela leitura do site. Caso tenha se interessado pelos nossos serviços, entre em contato conosco através do formulário abaixo. Iremos esclarecer quaisquer dúvidas sobre o nosso trabalho.</p>
+                    <div className="FooterInputs" id='form'>
                         <input type="text" placeholder="Nome" id='nome' name='nome' />
                         <input type="text" placeholder="E-mail" id='email' name='email' />
                         <input type="text" placeholder="Celular" id='celular' name='celular' />

@@ -234,14 +234,13 @@
 
   .MainWorks > h1 {
     font-size: 25px;
-    margin: 30px 0;
+    margin: 25px 0;
     font-family: Lalezar;
     font-weight: normal;
   }
 
 
   .MainWorks > p {
-    padding: 0 10px;
     margin-bottom: 31px;
   }
 
@@ -291,7 +290,7 @@
   }
 
   .MainButton {
-    margin: 45px 0;
+    margin: 25px 0;
     width: 86%;
   }
 
@@ -310,7 +309,7 @@
    font-family: Lalezar;
    font-size: 25px;
    font-weight: normal;
-   margin-top: 23px;
+   margin: 25px 0px;
  }
 
   .MainServicesArticles {
@@ -366,7 +365,7 @@ width: 132px;
 .MainSite > h1 {
   width: 100%;
   color: white;
-  margin: 30px auto;
+  margin: 25px auto;
   font-family: Lalezar;
   font-weight: normal;
   font-size: 25px;
@@ -394,7 +393,7 @@ width: 132px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 25px;
 }
 
 .MainSiteArticles article {
@@ -415,13 +414,13 @@ width: 132px;
 }
 
 .MainSite article h1 {
-  font-size: 28px;
+  font-size: 20px;
   margin-bottom: 16px;
   font-weight: normal;
 }
 
 .MainSite article p {
-  font-size: 16px;
+  font-size: 15px;
   color: #D9D9D9;
 }
 
@@ -440,7 +439,7 @@ width: 132px;
 
 .Footer h1 {
   color: #ffff;
-  font-size: 20px;
+  font-size: 25px;
   font-family: Lalezar;
   font-weight: normal;
   margin-top: 22px;
@@ -448,7 +447,7 @@ width: 132px;
 
 .Footer p {
   color: #ffff;
-  font-size: 16px;
+  font-size: 15px;
   font-family: KulimPark;
   padding: 0 32px;
   margin-bottom: 30px;

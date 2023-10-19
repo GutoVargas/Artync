@@ -1,15 +1,35 @@
 {
-  "name": "projeto-exemplo",
+  "name": "artync",
+  "homepage": "http://www.artync.com.br/",
   "version": "1.0.0",
   "description": "",
   "main": "client/index.js",
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.4.0",
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "heroku": "^8.4.1",
+    "mysql2": "^3.6.0",
+    "nodemailer": "^6.9.5",
+    "nodemon": "^3.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2",
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^2.1.4"
+  },
   "scripts": {
-    "start": "node server/index.js"
+    "start:server": "node server/index.js",
+    "start:client": "cd client && react-scripts start",
+    "start": "concurrently \"npm run start:server\" \"npm run start:client\""
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2"
-  }
+  "license": "ISC"
 }

@@ -1,13 +1,30 @@
 import styles from './Tabela.module.css'
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
-function Tabela () {
+
+function Tabela() {
+
+    const [dados, setDados] = useState([]);
+
+
+    useEffect(() => {
+        axios.get('/api/formorcamento')
+            .then(response => {
+                setDados(response.data);
+            })
+            .catch(error => {
+                console.error('Erro ao buscar dados:', error);
+            });
+    }, []);
+
     return (
         <div className={styles.window}>
             <section className={styles.dashboard}>
                 <aside className={styles.menu}>
                     <section>
                         <div className={styles.MenuImg}>
-                            <img src='./images/HeaderLogo.png' alt=''/>
+                            <img src='./images/HeaderLogo.png' alt='' />
                         </div>
                         <h1>Checkboxs</h1>
                     </section>
@@ -26,26 +43,13 @@ function Tabela () {
                             </tr>
                         </thead>
                         <tbody className={styles.corpo}>
-                            <tr>
-                                <th>NomeExemplo</th>
-                                <th>DataExemplo</th>
-                                <th>StatusExemplo</th>
-                            </tr>
-                            <tr>
-                                <th>NomeExemplo</th>
-                                <th>DataExemplo</th>
-                                <th>StatusExemplo</th>
-                            </tr>
-                            <tr>
-                                <th>NomeExemplo</th>
-                                <th>DataExemplo</th>
-                                <th>StatusExemplo</th>
-                            </tr>
-                            <tr>
-                                <th>NomeExemplo</th>
-                                <th>DataExemplo</th>
-                                <th>StatusExemplo</th>
-                            </tr>
+                            {dados.map(item => (
+                                <tr id={item.id}>
+                                    <th>{item.idEmpresa}</th>
+                                    <th>{item.dataOrcamento}</th>
+                                    <th>{item.status}</th>
+                                </tr>
+                            ))}
                         </tbody>
                     </table>
                 </div>

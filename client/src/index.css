@@ -1078,15 +1078,31 @@ width: 132px;
     color: #ffff;
     font-family: KulimPark;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 23px;
     display: flex;
     text-align: center;
     gap: 36px;
     padding: 24px 0;
     flex-direction: column;
   }
-  
 
+  .FooterAsideContent {
+    display: flex;
+    justify-content: space-evenly;
+    height: 150px;
+  }
+}
+
+.FooterAsideContent div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+
+.FooterAsideContent :first-child img {
+  width: 90%;
 }
 
 

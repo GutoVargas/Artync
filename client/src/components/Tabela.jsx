@@ -5,7 +5,7 @@ import axios from 'axios';
 
 function formatarData(data) {
     const date = new Date(data);
-    const dataFormatada =  ((date.getDate()) + "/" + ((date.getMonth() + 1)) + "/" + (date.getFullYear()));
+    const dataFormatada = ((date.getDate()) + "/" + ((date.getMonth() + 1)) + "/" + (date.getFullYear()));
     return dataFormatada;
 }
 
@@ -16,7 +16,7 @@ function Tabela() {
     const [dados, setDados] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:3001/api/formorcamento')
+        axios.get('http://localhost:3001/api/buscar')
             .then(response => {
                 setDados(response.data);
             })
@@ -44,17 +44,17 @@ function Tabela() {
                     <table>
                         <thead>
                             <tr>
-                                <th>Nome da empresa</th>
-                                <th>Data</th>
-                                <th>Status</th>
+                                <th>Nome</th>
+                                <th>Logo</th>
+                                <th>Ações</th>
                             </tr>
                         </thead>
                         <tbody className={styles.corpo}>
                             {dados.map(item => (
                                 <tr id={item.id}>
-                                    <th>{item.nomeEmpresa}</th>
-                                    <th>{formatarData(item.dataOrcamento)}</th>
-                                    <th>{item.status}</th>
+                                    <th>{item.nome}</th>
+                                    <th><img src={item.url_icon} alt="" /></th>
+                                    <th><input type="button" name="" id="" value="Editar" /><input type="button" name="" id="" value="Excluir" /></th>
                                 </tr>
                             ))}
                         </tbody>

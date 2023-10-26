@@ -3,13 +3,20 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 
+function formatarData(data) {
+    const date = new Date(data);
+    const dataFormatada =  ((date.getDate()) + "/" + ((date.getMonth() + 1)) + "/" + (date.getFullYear()));
+    return dataFormatada;
+}
+
 function Tabela() {
+
+
 
     const [dados, setDados] = useState([]);
 
-
     useEffect(() => {
-        axios.get('/api/formorcamento')
+        axios.get('http://localhost:3001/api/formorcamento')
             .then(response => {
                 setDados(response.data);
             })
@@ -45,8 +52,8 @@ function Tabela() {
                         <tbody className={styles.corpo}>
                             {dados.map(item => (
                                 <tr id={item.id}>
-                                    <th>{item.idEmpresa}</th>
-                                    <th>{item.dataOrcamento}</th>
+                                    <th>{item.nomeEmpresa}</th>
+                                    <th>{formatarData(item.dataOrcamento)}</th>
                                     <th>{item.status}</th>
                                 </tr>
                             ))}
@@ -56,6 +63,10 @@ function Tabela() {
             </section>
         </div>
     )
+
+
 }
+
+
 
 export default Tabela

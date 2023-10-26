@@ -50,7 +50,6 @@ if (SSL == true) {
   app.listen(port);
 
 
-
 } else {
 
   /*
@@ -69,6 +68,7 @@ if (SSL == true) {
   const mysql = require('mysql2');
   const app = express();
   const cors = require('cors');
+  const Funcoes = require('./func.js');
 
   app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -95,19 +95,27 @@ if (SSL == true) {
     });
   });
 
-  /*
+  app.get('/api/formorcamento', (req, res) => {
+    db.query('SELECT * FROM orcamento o INNER JOIN empresa e ON e.id = o.idEmpresa;', (err, results) => {
+      if (err) {
+        res.status(500).json({ error: err.message });
+      } else {
+        res.json(results);
+      }
+    });
+  });
+
+
   app.post('/api/processar-form', (req, res) => {
     const dados = req.body;
     const check = req.body.checkbox;
     const processar = new Funcoes();
     if (processar.processa_form(dados, check)) {
-      res.redirect('http://localhost:3000/sucesso');
+      res.json(processar);
     } else {
-
     }
-
   });
-  */
+
 
   app.post('/api/send-message', (req, res) => {
     const dados = req.body;
@@ -115,7 +123,6 @@ if (SSL == true) {
     const linkWhatsApp = `https://api.whatsapp.com/send?phone=${numeroTelefone}&text=${encodeURIComponent(dados.mensagem)}`;
     res.redirect(linkWhatsApp);
   });
-
 
   app.listen(3001, () => {
     console.log('Server is running on port 3001');

@@ -19,7 +19,7 @@ function OrcamentoMain() {
 
     return (
         <main className={styles.Main}>
-            <form action='/api/processar-form' method='post'>
+            <form action='http://localhost:3001/api/processar-form' method='post'>
                 <section className={styles.MainInputs}>
                     <p>Nessa página você pode solicitar um orçamento personalizado para seu site. <br /> Entraremos em contato para saber mais sobre sua empresa caso seja necessário.</p>
                     <input type='text' placeholder='Nome' name='nome' id='nome'></input>

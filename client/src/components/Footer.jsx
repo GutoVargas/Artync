@@ -40,7 +40,8 @@ function Footer() {
                         <p>(51) 99614 5874</p>
                     </div>
                     <div>
-                        <img src="./images/icons/Insta.svg" alt="" />
+                        <a href="https://www.instagram.com/_artync/" target="blank"><img src="./images/icons/Insta.svg" alt="" /></a>
+                        <a href="https://www.linkedin.com/in/artync-desenvolvedora-808810293/" target="blank"><img src="./images/icons/Linkedin.svg" alt="" /></a>
                     </div>
                 </div>
                 <p>Desenvolvido por Artync © 2023</p>

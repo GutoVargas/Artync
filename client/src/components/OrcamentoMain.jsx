@@ -36,7 +36,7 @@ function OrcamentoMain() {
                     <div className={styles.MainCheckbox}>
                         {dados.map(item => (
                             <div className={styles.MainCheckboxItem}>
-                                <input type='checkbox' name='checkbox' key={item.id} value={item.id} />
+                                <input type='checkbox' name='checkbox' key={item.id} value={item.id} id={item.nome}/>
                                 <img src={item.url_icon} alt=""/>
                                 <h1>{item.nome}</h1>
                             </div>

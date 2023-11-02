@@ -508,18 +508,40 @@ width: 132px;
   .FooterAside {
     background-color: #071825;
     height: auto;
+    min-height: 164px;
     color: #ffff;
     font-family: KulimPark;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 15px;
     display: flex;
     text-align: center;
-    gap: 18px;
-    padding: 24px 0;
+    gap: 36px;
+    padding: 40px 0;
     flex-direction: column;
   }
-  
 
+  .FooterAsideContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 160px;
+  }
+
+  .FooterAsideContent div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  
+  .FooterAsideContent div:first-child img {
+    width: 40%;
+  }
+
+  .FooterAsideContent div img {
+    width: 24px;
+  }
 }
 
 
@@ -1091,19 +1113,21 @@ width: 132px;
     justify-content: space-evenly;
     height: 150px;
   }
+
+  .FooterAsideContent div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  
+  .FooterAsideContent :first-child img {
+    width: 90%;
+  }
+  
 }
 
-.FooterAsideContent div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-}
-
-
-.FooterAsideContent :first-child img {
-  width: 90%;
-}
 
 
 

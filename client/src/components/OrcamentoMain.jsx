@@ -33,6 +33,7 @@ function OrcamentoMain() {
                     <input type='text' className={styles.WholeInput} name="produtosServicos" placeholder='Que produtos/serviços sua empresa oferece? ' id='produtosServicos'></input>
                     <input type='text' className={styles.WholeInput} name="observacoes" placeholder='Observações adicionais' id='observacoes'></input>
                     <h1>Selecione os itens que tem interesse em adicionar ao seu projeto</h1>
+<<<<<<< HEAD
                     <div className={styles.MainCheckbox}>
                         {dados.map(item => (
                             <div className={styles.MainCheckboxItem}>
@@ -47,7 +48,22 @@ function OrcamentoMain() {
                         <p>Solicitar um orçamento</p>
                         <img src="./images/flecha.png" alt="" />
                     </button>
+=======
+>>>>>>> origin/front
                 </section>
+                <div className={styles.MainCheckbox}>
+                    {dados.map(item => (
+                        <div className={styles.MainCheckboxItem}>
+                            <input type='checkbox' name='checkbox' key={item.id} value={item.id} />
+                            <img src={item.url_icon} alt=""/>
+                            <p>{item.nome}</p>
+                        </div>
+                    ))}
+                </div>
+                <button className={styles.MainButton}>
+                    <p>Solicitar um orçamento</p>
+                    <img src="./images/flecha.png" alt="" />
+                </button>
             </form>
         </main >
     )

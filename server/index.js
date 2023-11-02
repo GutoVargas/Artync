@@ -140,7 +140,6 @@ if (SSL == true) {
   const mysql = require('mysql2');
   const app = express();
   const cors = require('cors');
-  const Funcoes = require('./func.js');
 
   app.use(bodyParser.urlencoded({ extended: true }));
 

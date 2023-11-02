@@ -60,10 +60,10 @@ function Main() {
                         <p>Websites otimizados com velocidade de carregamento rápida e funcionalidades fluidas.</p>
                     </article>
                 </div>
-                    <a href='./orçamento' className="Button MainButton" data-anime='bottom' onClick={scrollTop}>
+                    <Link to='/orçamento' className="Button MainButton" data-anime='bottom' onClick={scrollTop}>
                         <p>Solicitar orçamento</p>
                         <img src="./images/flecha.png" alt="" />
-                    </a>
+                    </Link>
             </section>
             <section className='MainServices'>
                 <h1>Nossos serviços</h1>

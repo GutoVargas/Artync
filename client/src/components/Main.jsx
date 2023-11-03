@@ -79,12 +79,12 @@ function Main() {
                         <p>Transforme visitantes em clientes com nossas landing pages. Criadas para capturar a atenção e incentivar a ação, nossas landing pages oferecem uma experiência envolvente e persuasiva.</p>
                     </article>
                     <article data-anime='top'>
-                        <img src='./images/MainServices2.png' alt='' />
+                        <img src='./images/MainServices3.png' alt='' />
                         <h1>One Page</h1>
                         <p>É a solução perfeita para transmitir sua mensagem de forma concisa e envolvente. Com todo o conteúdo em uma única página, desde a apresentação impactante até as seções informativas.</p>
                     </article>
                     <article data-anime='top'>
-                        <img src='./images/MainServices2.png' alt='' />
+                        <img src='./images/MainServices4.png' alt='' />
                         <h1>Sites Institucionais</h1>
                         <p>Transmita a essência da sua marca de forma profissional e envolvente. Apresente informações relevantes e cativantes sobre a sua empresa, história, valores e serviços em um design elegante.</p>
                     </article>

@@ -32,16 +32,16 @@ function Footer() {
                         <img src="./images/FooterLogo.png" alt="" />
                     </div>
                     <div>
-                        <img src="./images/icons/Gmail.svg" alt="" />
+                        <img src="./images/icons/gmail.svg" alt="" />
                         <p>artyncdesenvolvedora@gmail.com</p>
                     </div>
                     <div>
-                        <img src="./images/icons/WhatsFooter.svg" alt="" />
+                        <img src="./images/icons/whatsfooter.svg" alt="" />
                         <p>(51) 99614 5874</p>
                     </div>
                     <div>
-                        <a href="https://www.instagram.com/_artync/" target="blank"><img src="./images/icons/Insta.svg" alt="" /></a>
-                        <a href="https://www.linkedin.com/in/artync-desenvolvedora-808810293/" target="blank"><img src="./images/icons/Linkedin.svg" alt="" /></a>
+                        <a href="https://www.instagram.com/_artync/" target="blank"><img src="./images/icons/insta.svg" alt="" /></a>
+                        <a href="https://www.linkedin.com/in/artync-desenvolvedora-808810293/" target="blank"><img src="./images/icons/linkedin.svg" alt="" /></a>
                     </div>
                 </div>
                 <p>Desenvolvido por Artync © 2023</p>

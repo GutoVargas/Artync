@@ -5,49 +5,11 @@ import { Link } from 'react-router-dom';
 function Header() {
     document.body.style.overflow = 'hidden';
     document.body.scroll = "no"
-
     ScrollActive();
     AnimeFirst();
     AnimeBefore();
-
     const animationClass = 'animate';
     const animationClassBefore = 'AnimateBefore'
-
-
-    function AnimeFirst() {
-        setTimeout(() => {
-            const WindowTop = window.pageYOffset + (window.innerHeight * 2.5 / 4);
-            const target = document.querySelectorAll('[data-animefirst]');
-            target.forEach(function (element) {
-                if ((WindowTop) > element.offsetTop) {
-                    element.classList.add(animationClass)
-                } else {
-                    element.classList.remove(animationClass)
-                }
-            })
-        }, 2000);
-    }
-
-    function AnimeBefore() {
-        setTimeout(() => {
-            const WindowTop = window.pageYOffset + (window.innerHeight * 2.5 / 4);
-            const target = document.querySelectorAll('[data-animebefore]');
-            target.forEach(function (element) {
-                if ((WindowTop) > element.offsetTop) {
-                    element.classList.add(animationClassBefore)
-                } else {
-                    element.classList.remove(animationClassBefore)
-                }
-            })
-        }, 2500);
-    }
-
-    function ScrollActive() {
-        setTimeout(() => {
-            document.body.style.overflow = 'auto';
-            document.body.scroll = "yes"
-        }, 4000);
-    }
 
     const scrollTop = () => {
         window.scrollTo({
@@ -56,10 +18,30 @@ function Header() {
         })
     }
 
+    function AnimeFirst() {
+        setTimeout(() => {
+            const target = document.querySelectorAll('[data-animefirst]');
+            target.forEach(function (element) {
+                    element.classList.add(animationClass)
+            })
+        }, 2000);
+    }
 
+    function AnimeBefore() {
+        setTimeout(() => {
+            const target = document.querySelectorAll('[data-animebefore]');
+            target.forEach(function (element) {
+                    element.classList.add(animationClassBefore)
+            })
+        }, 3000);
+    }
 
-
-
+    function ScrollActive() {
+        setTimeout(() => {
+            document.body.style.overflow = 'auto';
+            document.body.scroll = "yes"
+        }, 4000);
+    }
 
 
     return (

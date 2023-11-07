@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0491c58f.css",
+    "main.js": "/static/js/main.5ffc4f64.js",
+    "static/media/HeaderBackground.png": "/static/media/HeaderBackground.a53cac77ae93642f081d.png",
+    "static/media/OrcamentoHeaderBackground.png": "/static/media/OrcamentoHeaderBackground.767410db043fc19de3c8.png",
+    "static/media/Background1.png": "/static/media/Background1.217abb761daf4ad02845.png",
+    "static/media/Background2.png": "/static/media/Background2.804914435aad9a0cb72b.png",
+    "static/media/Lalezar-Regular.ttf": "/static/media/Lalezar-Regular.46c2f4f207f663a279fb.ttf",
+    "static/media/Background3.png": "/static/media/Background3.5451e46c76f0bdceb38c.png",
+    "static/media/KulimPark-Regular.ttf": "/static/media/KulimPark-Regular.2ab065a683015a9971e3.ttf",
+    "static/media/Background5.png": "/static/media/Background5.9c82ddc5b4859a212245.png",
+    "index.html": "/index.html",
+    "main.0491c58f.css.map": "/static/css/main.0491c58f.css.map",
+    "main.5ffc4f64.js.map": "/static/js/main.5ffc4f64.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0491c58f.css",
+    "static/js/main.5ffc4f64.js"
+  ]
+}

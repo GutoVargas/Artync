@@ -8,6 +8,7 @@ import Painel from './pages/Painel'
 import PainelCheckboxs from './pages/PainelCheckboxs'
 import Footer from './components/Footer';
 import Sucesso from './components/Sucesso';
+import Checkout from './components/CheckoutMain.jsx';
 
 
 
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
     path: '/sucesso',
     element: <Sucesso />
   },
+  {
+    path: '/checkout',
+    element: <Checkout />
+  }
 ])
 
 

@@ -8,7 +8,7 @@ function OrcamentoMain() {
 
 
     useEffect(() => {
-        axios.get('http://localhost:3001/api/buscar')
+        axios.get('/api/buscar')
             .then(response => {
                 setDados(response.data);
             })

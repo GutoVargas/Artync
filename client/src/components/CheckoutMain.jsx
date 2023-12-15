@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 
 
 function CheckoutMain() {
     return (
         <>
+
             <div>
-                <form action="/checkout/pagamento" method="post">
-                    <button type="submit">Enviar</button>
+                <form action="/pagamento" method="post">
+                    <h2>Informações do Comprador</h2>
+
+                    <button type="submit">Finalizar Compra</button>
                 </form>
             </div>
         </>

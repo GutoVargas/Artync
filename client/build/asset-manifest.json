@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0491c58f.css",
-    "main.js": "/static/js/main.39475260.js",
+    "main.js": "/static/js/main.b021e39e.js",
     "static/media/HeaderBackground.png": "/static/media/HeaderBackground.a53cac77ae93642f081d.png",
     "static/media/OrcamentoHeaderBackground.png": "/static/media/OrcamentoHeaderBackground.767410db043fc19de3c8.png",
     "static/media/Background1.png": "/static/media/Background1.217abb761daf4ad02845.png",
@@ -12,10 +12,10 @@
     "static/media/Background5.png": "/static/media/Background5.9c82ddc5b4859a212245.png",
     "index.html": "/index.html",
     "main.0491c58f.css.map": "/static/css/main.0491c58f.css.map",
-    "main.39475260.js.map": "/static/js/main.39475260.js.map"
+    "main.b021e39e.js.map": "/static/js/main.b021e39e.js.map"
   },
   "entrypoints": [
     "static/css/main.0491c58f.css",
-    "static/js/main.39475260.js"
+    "static/js/main.b021e39e.js"
   ]
 }
